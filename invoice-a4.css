@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+#invoice {
+    max-width: 800px;
+    margin: 20px auto;
+
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-body {
+    padding: 10px 50px 50px 50px;
+}
+
+/* Header */
+.header {
+    background: #e5d9cf;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Invoice Info */
+#invoice-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.info-block p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Item Table */
+#item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#item-table th,
+#item-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#item-table thead {
+    background: #f4f4f4;
+}
+
+#item-table tfoot {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+#payment-notes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.signature-line {
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin-top: 10px;
+}
+
+#footer-link {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}

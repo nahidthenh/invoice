@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+#invoice {
+    max-width: 58mm;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+header p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Invoice Info */
+#invoice-info {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.info-block p {
+    margin: 2px 0;
+}
+
+/* Item Table */
+#item-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+
+#item-table th,
+#item-table td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.signature-line {
+    width: 50px;
+    height: 1px;
+    background: #000;
+    margin-top: 5px;
+}
+
+#footer-link {
+    text-align: center;
+    font-size: 8px;
+}

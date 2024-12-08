@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link id="stylesheet" rel="stylesheet" href="invoice-a4.css">
+</head>
+
+<body>
+    <div id="invoice">
+        <!-- Header -->
+        <header class="header">
+            <div id="invoice-header">
+                <h1>INVOICE</h1>
+                <p>WARDIERE INC.</p>
+            </div>
+            <div class="info-block">
+                <p><strong>Date:</strong> 15/08/2028</p>
+                <p><strong>Invoice No:</strong> 2000-15</p>
+            </div>
+        </header>
+        <div class="invoice-body">
+            <!-- Invoice Info -->
+            <section id="invoice-info">
+
+                <div class="info-block">
+                    <p><strong>Bill To:</strong></p>
+                    <p>Olivia Wilson</p>
+                    <p>hello@reallygreatsite.com</p>
+                    <p>123 Anywhere St., Any City, ST 12345</p>
+                </div>
+                <div class="info-block">
+                    <p><strong>From:</strong></p>
+                    <p>Wardiere Inc.</p>
+                    <p>hello@reallygreatsite.com</p>
+                    <p>123 Anywhere St., Any City, ST 12345</p>
+                </div>
+            </section>
+
+            <!-- Item Table -->
+            <table id="item-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Hours</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Graphic design consultation</td>
+                        <td>2</td>
+                        <td>$100.00</td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Logo design</td>
+                        <td>1</td>
+                        <td>$700.00</td>
+                        <td>$700.00</td>
+                    </tr>
+                    <tr>
+                        <td>Social media templates</td>
+                        <td>1</td>
+                        <td>$600.00</td>
+                        <td>$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Revision</td>
+                        <td>2</td>
+                        <td>$300.00</td>
+                        <td>$600.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total amount</td>
+                        <td>$2,100.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Footer -->
+            <footer>
+                <section id="payment-notes">
+                    <div>
+                        <p><strong>Payment Status</strong></p>
+                        <p>Pending</p>
+                    </div>
+                    <div>
+                        <p><strong>Notes</strong></p>
+                        <p>Thank you for choosing us!</p>
+                    </div>
+                </section>
+                <p id="footer-link">www.reallygreatsite.com</p>
+            </footer>
+        </div>
+    </div>
+
+    <button onclick="switchToPOS()">Switch to POS (58mm)</button>
+    <button onclick="switchToA4()">Switch to A4</button>
+    <button onclick="printInvoice()">Print</button>
+
+    <script>
+        function switchToPOS() {
+            document.getElementById('stylesheet').href = 'invoice-pos.css';
+        }
+
+        function switchToA4() {
+            document.getElementById('stylesheet').href = 'invoice-a4.css';
+        }
+
+        function printInvoice() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>
