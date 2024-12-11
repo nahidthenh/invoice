@@ -60,60 +60,6 @@ header p {
     font-weight: normal !important;
 }
 
-/* Item Table */
-#item-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-#item-table th,
-#item-table td {
-    text-align: left;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-/* #item-table thead {
-    background: #f4f4f4;
-} */
-
-#item-table tfoot {
-    font-weight: bold;
-}
-
-/* Updated styles for right-aligned tfoot */
-#item-table tfoot {
-    font-size: 14px;
-    font-weight: normal;
-    text-align: right;
-}
-
-#item-table tfoot tr {
-    /* display: flex; */
-    justify-content: flex-end;
-    /* Aligns the content to the right */
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-#item-table tfoot td {
-    flex: 0 0 auto;
-    padding: 15px 0;
-    font-weight: bold;
-}
-
-#item-table tfoot td:first-child {
-    text-align: right;
-    font-weight: normal;
-    color: #555;
-}
-
-#item-table tfoot td:last-child {
-    text-align: right;
-    font-weight: bold;
-    color: #000;
-}
 
 /* Footer */
 footer {
@@ -126,24 +72,19 @@ footer {
     font-size: 14px;
 }
 
-.signature-line {
-    width: 100px;
-    height: 1px;
-    background: #000;
-    margin-top: 10px;
+/* Tabel CSS  */
+
+#item-table tfoot td:first-child {
+    text-align: right;
+    font-weight: normal;
+    color: #555;
 }
 
-#footer-link {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 20px;
+#item-table tfoot td:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: #000;
 }
-
-
-
-
-
-
 
 #item-table {
     width: 100%;
@@ -167,6 +108,7 @@ footer {
 
 #item-table tfoot tr td {
     font-weight: bold;
+    border-bottom: 0;
 }
 
 #item-table tfoot tr td:last-child {
