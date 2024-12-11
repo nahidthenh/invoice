@@ -9,9 +9,8 @@ body {
 #invoice {
     max-width: 800px;
     margin: 20px auto;
-
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .invoice-body {
@@ -19,13 +18,21 @@ body {
 }
 
 /* Header */
+#invoice-header {
+    text-align: left !important;
+}
+
+#invoice-header p {
+    font-weight: normal !important;
+}
+
 .header {
-    background: #e5d9cf;
+    /* background: #e5d9cf; */
     padding: 50px;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
@@ -49,6 +56,8 @@ header p {
 .info-block p {
     margin: 5px 0;
     font-size: 14px;
+    text-align: left !important;
+    font-weight: normal !important;
 }
 
 /* Item Table */
@@ -61,16 +70,49 @@ header p {
 #item-table th,
 #item-table td {
     text-align: left;
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
-#item-table thead {
+/* #item-table thead {
     background: #f4f4f4;
-}
+} */
 
 #item-table tfoot {
     font-weight: bold;
+}
+
+/* Updated styles for right-aligned tfoot */
+#item-table tfoot {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+}
+
+#item-table tfoot tr {
+    /* display: flex; */
+    justify-content: flex-end;
+    /* Aligns the content to the right */
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#item-table tfoot td {
+    flex: 0 0 auto;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+#item-table tfoot td:first-child {
+    text-align: right;
+    font-weight: normal;
+    color: #555;
+}
+
+#item-table tfoot td:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: #000;
 }
 
 /* Footer */
@@ -95,4 +137,42 @@ footer {
     text-align: center;
     font-size: 12px;
     margin-top: 20px;
+}
+
+
+
+
+
+
+
+#item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+#item-table th,
+#item-table td {
+    text-align: left;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#item-table th:last-child,
+#item-table td:last-child {
+    text-align: right;
+}
+
+#item-table tfoot tr td {
+    font-weight: bold;
+}
+
+#item-table tfoot tr td:last-child {
+    text-align: right;
+}
+
+#item-table tfoot {
+    margin-top: 10px;
 }
