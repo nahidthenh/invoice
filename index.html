@@ -9,32 +9,31 @@
 </head>
 
 <body>
+    
     <div id="invoice">
         <!-- Header -->
         <header class="header">
-            <div class="info-block">
-                <p><strong>Date:</strong> 15/08/2028</p>
-                <p><strong>Order No:</strong> 1273-1237</p>
-                <p><strong>Invoice No:</strong> 20120355</p>
+            <div class="left">
+                <p>Date: 15/08/2028</p>
+                <p>Order No: 1273-1237</p>
+                <p>Invoice No: 20120355</p>
             </div>
-            <div id="invoice-header">
+            <div class="center">
                 <img src="https://www.teqfie.com/_next/static/media/logo.dfd43b78.svg" alt="Teqfie">
-                <div class="info-block">
-                    <p><strong>Swift WP Services</strong></p>
-                    <p>+8801729164855</p>
-                    <p>info@swiftwpservices.com</p>
-                </div>
+                <!-- <p><strong>Swift WP Services</strong></p> -->
+                <p>+8801729164855 </p>
+                <p>info@swiftwpservices.com</p>
             </div>
-            <div class="info-block">
+            <div class="right">
                 <p><strong>Customer Details</strong></p>
                 <p>Md. Nahid Hasan</p>
                 <p>01729164888</p>
                 <p>123 Anywhere St., Any City, ST 12345</p>
             </div>
-
         </header>
+    
+        <!-- Invoice Body -->
         <div class="invoice-body">
-            <!-- Item Tabel  -->
             <table id="item-table">
                 <thead>
                     <tr>
@@ -84,22 +83,14 @@
                     </tr>
                 </tfoot>
             </table>
-
-            <!-- Footer -->
-            <footer>
-                <section id="payment-notes">
-                    <div>
-                        <p><strong>Payment Status</strong></p>
-                        <p>Pending</p>
-                    </div>
-                    <div>
-                        <p><strong>Notes</strong></p>
-                        <p>Thank you for choosing us!</p>
-                    </div>
-                </section>
-                <p id="footer-link">www.teqfie.com</p>
-            </footer>
         </div>
+    
+        <!-- Footer -->
+        <footer>
+            <p class="notes">Payment Status: Pending</p>
+            <p>Thank you for choosing us!</p>
+            <p>www.teqfie.com</p>
+        </footer>
     </div>
 
     <button onclick="switchToPOS()">Switch to POS (58mm)</button>

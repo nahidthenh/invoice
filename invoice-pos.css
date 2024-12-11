@@ -1,70 +1,88 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-}
+ /* General Styles */
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background: #fff;
+     color: #000;
+ }
 
-#invoice {
-    max-width: 58mm;
-    margin: 0 auto;
-    padding: 10px;
-    background: #fff;
-}
+ #invoice {
+     width: 58mm;
+     margin: 0 auto;
+     background: #fff;
+     padding: 10px;
+     box-sizing: border-box;
+     border: 1px solid #ddd;
+ }
 
-/* Header */
-header {
-    text-align: center;
-}
+ .invoice-body {
+     padding: 10px 0;
+ }
 
-header h1 {
-    font-size: 16px;
-    margin: 0;
-}
+ /* Header */
+ .header {
+     text-align: center;
+     border-bottom: 1px dashed #ddd;
+     margin-bottom: 10px;
+     padding-bottom: 5px;
+ }
 
-header p {
-    font-size: 12px;
-    margin: 5px 0;
-}
+ .header img {
+     max-height: 40px;
+     margin-bottom: 5px;
+ }
 
-/* Invoice Info */
-#invoice-info {
-    font-size: 10px;
-    margin-bottom: 20px;
-}
+ .header p {
+     margin: 2px 0;
+     font-size: 12px;
+ }
 
-.info-block p {
-    margin: 2px 0;
-}
+ .header strong {
+     font-size: 14px;
+ }
 
-/* Item Table */
-#item-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 10px;
-}
+ /* Table Styles */
+ #item-table {
+     width: 100%;
+     border-collapse: collapse;
+     font-size: 12px;
+ }
 
-#item-table th,
-#item-table td {
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
-}
+ #item-table th,
+ #item-table td {
+     text-align: left;
+     padding: 5px;
+     border-bottom: 1px dashed #ddd;
+ }
 
-/* Footer */
-footer {
-    font-size: 10px;
-    margin-top: 20px;
-}
+ #item-table th:last-child,
+ #item-table td:last-child {
+     text-align: right;
+ }
 
-.signature-line {
-    width: 50px;
-    height: 1px;
-    background: #000;
-    margin-top: 5px;
-}
+ #item-table tfoot td {
+     font-weight: bold;
+ }
 
-#footer-link {
-    text-align: center;
-    font-size: 8px;
-}
+ #item-table tfoot td:last-child {
+     text-align: right;
+ }
+
+ /* Footer */
+ footer {
+     text-align: center;
+     border-top: 1px dashed #ddd;
+     margin-top: 10px;
+     padding-top: 5px;
+ }
+
+ footer p {
+     margin: 2px 0;
+     font-size: 12px;
+ }
+
+ footer .notes {
+     font-size: 13px;
+     font-weight: bold;
+ }

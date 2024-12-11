@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    color: #000 !important;
 }
 
 #invoice {
@@ -17,34 +18,6 @@ body {
     padding: 10px 50px 50px 50px;
 }
 
-/* Header */
-#invoice-header {
-    text-align: left !important;
-}
-
-#invoice-header p {
-    font-weight: normal !important;
-}
-
-.header {
-    /* background: #e5d9cf; */
-    padding: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-}
-
-header h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-header p {
-    font-size: 14px;
-    margin: 0;
-    font-weight: bold;
-}
 
 /* Invoice Info */
 #invoice-info {
@@ -122,4 +95,57 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+}
+
+/* Redesigned Header */
+.header {
+    /* background: #4CAF50; */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #ddd;
+}
+
+.header .left,
+.header .right {
+    flex: 1;
+}
+
+.header .center {
+    text-align: center;
+    flex: 2;
+}
+
+.header img {
+    max-height: 50px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.header strong {
+    font-size: 16px;
+}
+
+/* Redesigned Footer */
+footer {
+    /* background: #4CAF50; */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px dashed #ddd;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer .notes {
+    font-size: 16px;
+    font-weight: bold;
 }
