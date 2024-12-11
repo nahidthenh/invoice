@@ -60,18 +60,6 @@ header p {
     font-weight: normal !important;
 }
 
-
-/* Footer */
-footer {
-    margin-top: 20px;
-}
-
-#payment-notes {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
 /* Tabel CSS  */
 
 #item-table tfoot td:first-child {
@@ -106,15 +94,32 @@ footer {
     text-align: right;
 }
 
+#item-table tfoot tr:first-child td {
+    padding-top: 20px !important;
+}
+
 #item-table tfoot tr td {
     font-weight: bold;
     border-bottom: 0;
+    padding: 8px 0 !important;
 }
 
 #item-table tfoot tr td:last-child {
     text-align: right;
 }
 
-#item-table tfoot {
-    margin-top: 10px;
+#item-table {
+    margin-bottom: 50px;
+    /* Adds space below the table */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+#payment-notes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
 }
