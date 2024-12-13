@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDevs Order Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .report-container {
+            width: 210mm;
+            height: 297mm;
+            margin: auto;
+            padding: 20mm;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+
+        .report-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 2px dashed #ddd;
+        }
+
+        .report-header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .report-header h2 {
+            font-size: 24px;
+            margin: 0px;
+        }
+
+        .report-header p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th,
+        table td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .print-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .print-button button {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .print-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="report-container">
+        <div class="report-header">
+            <h1>NDevs</h1>
+            <h2>Order Report</h2>
+            <p>Generated on: 13/12/2024</p>
+            <p>Description: SwiftWPServices Order Report</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order No</th>
+                    <th>Customer</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-center">3120100004</td>
+                    <td>Nahid Hasan</td>
+                    <td>01711111111</td>
+                    <td>Mirpur DOHS</td>
+                    <td>Vanilla Cake</td>
+                    <td class="align-center">1</td>
+                    <td class="align-center">800</td>
+                    <td class="align-center">800</td>
+                </tr>
+                <tr>
+                    <td class="align-center">3120100004</td>
+                    <td>Nahid Hasan</td>
+                    <td>01711111111</td>
+                    <td>Mirpur DOHS</td>
+                    <td>Red Velvet</td>
+                    <td class="align-center">1</td>
+                    <td class="align-center">1000</td>
+                    <td class="align-center">1000</td>
+                </tr>
+                <tr>
+                    <td class="align-center">3120100003</td>
+                    <td>Shuvo Kumar G.</td>
+                    <td>01775280411</td>
+                    <td>House: 12, Road: 05, Rupnagar R/A, Mirpur</td>
+                    <td>Red Velvet</td>
+                    <td class="align-center">1</td>
+                    <td class="align-center">1000</td>
+                    <td class="align-center">1000</td>
+                </tr>
+                <tr>
+                    <td class="align-center">3120100002</td>
+                    <td>Sazib</td>
+                    <td>01995577259</td>
+                    <td>H: 55, R: 28, Rupnagar R/A</td>
+                    <td>Vanilla Cake</td>
+                    <td class="align-center">1</td>
+                    <td class="align-center">800</td>
+                    <td class="align-center">800</td>
+                </tr>
+                <tr>
+                    <td class="align-center">3120100001</td>
+                    <td>Sazib Uddin</td>
+                    <td>01995577259</td>
+                    <td>House 55, Road 28, Rupnagar R/A</td>
+                    <td>Red Velvet</td>
+                    <td class="align-center">1</td>
+                    <td class="align-center">1000</td>
+                    <td class="align-center">1000</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="print-button">
+            <button onclick="window.print()">Print Report</button>
+        </div>
+    </div>
+</body>
+
+</html>
